@@ -1,0 +1,26 @@
+{
+  "Id": "58cee192-a826-4f3d-b6a7-ba005215b92c",
+  "ProcessSteps": [
+    {
+      "$type": "auth",
+      "ToBeAuthorizedBy": {
+        "Id": "5d444568-4c66-40da-9459-85a87543e98c",
+        "FirstName": "Paul",
+        "LastName": "Paulsen"
+      },
+      "Id": "f93cfef7-3d43-42fc-a080-70339691852b",
+      "State": 0,
+      "Ended": false
+    },
+    {
+      "$type": "email",
+      "To": "to@domain.com",
+      "From": "from@domain.com",
+      "Id": "f83cfef7-3d43-42fc-a080-70339691852b",
+      "State": 0,
+      "Ended": false
+    }
+  ],
+  "State": 0,
+  "Ended": false
+}

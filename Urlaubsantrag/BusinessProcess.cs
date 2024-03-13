@@ -31,17 +31,21 @@ namespace Urlaubsantrag
             Console.WriteLine("process stopped");
         }
         public void continueBusinessProcess() {
-            ProcessSteps[State].processStep();
-            State++;
-            if (State == ProcessSteps.Count)
-            {
-                Console.WriteLine("Geschäftsprozess beendet");
-                Ended = true;
-            }
-            else { 
-                stopBusinessProcess();
-            }
-            
+            if (State == ProcessSteps.Count) {
+                Console.WriteLine("Geschäftsprozess wurde bereits beendet");
+            } else {
+                ProcessSteps[State].processStep();
+                State++;
+                if (State == ProcessSteps.Count)
+                {
+                    Console.WriteLine("Geschäftsprozess beendet");
+                    Ended = true;
+                }
+                else
+                {
+                    stopBusinessProcess();
+                }
+            }            
         }
     }
 }
