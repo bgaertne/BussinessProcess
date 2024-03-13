@@ -21,6 +21,7 @@ namespace Urlaubsantrag
 
         public override void   processStep() {
             Console.WriteLine($"Email von {From} an {To} versended");
+            Ended = true;
         }
     }
 }

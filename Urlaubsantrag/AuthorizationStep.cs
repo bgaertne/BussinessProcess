@@ -23,6 +23,7 @@ namespace Urlaubsantrag
             Console.WriteLine($"Muss von {ToBeAuthorizedBy.FirstName} {ToBeAuthorizedBy.LastName} authorisiert werden");
 
             Console.WriteLine($"Wurde von {ToBeAuthorizedBy.FirstName} {ToBeAuthorizedBy.LastName} authorisiert");
+            Ended = true;
         }
 
     }
